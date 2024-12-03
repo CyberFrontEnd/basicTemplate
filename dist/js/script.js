@@ -82,6 +82,10 @@ $(document).ready(function () {
     animationSpeed: 'fast',
     updateHash: false,
   });
+  $('#tab-container3').easytabs({
+    animationSpeed: 'fast',
+    updateHash: false,
+  });
 });
 
 
@@ -628,5 +632,22 @@ $(document).ready(function () {
   // Только цыфры водит буквы не пускает вводить
   $('.codeSMS').on('input', function() {
     this.value = this.value.replace(/[^0-9]/g, '');
+  });
+});
+
+
+$(document).ready(function () {
+  var mainSliderSwipe = new Swiper(".mainSliderSwipe", {
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: false,
+    // },
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    mousewheel: true,
+    keyboard: true,
   });
 });
