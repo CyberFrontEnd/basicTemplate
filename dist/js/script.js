@@ -638,16 +638,14 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   var mainSliderSwipe = new Swiper(".mainSliderSwipe", {
-    // autoplay: {
-    //   delay: 5000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
 
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
-    mousewheel: true,
-    keyboard: true,
   });
 });
